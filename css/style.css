@@ -1,0 +1,57 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon{
+    height: 50px;
+    width: 50px;
+    background-image: url(/assets/fotologo.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    border: 1px solid;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.photo-banner{
+    height: 500px;
+    background-image: url(/assets/ogiwisu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.message-form {
+    width: 20%;
+    float: left;
+}
+
+.message-list {
+    width: 80%;
+    float: right;
+    border: 5000;
+
+}
+.submit-gas {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: grey;
+    cursor: pointer;
+}
+
+footer>div {
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+}
