@@ -26,28 +26,93 @@ nav>a {
 
 .photo-banner{
     height: 500px;
-    background-image: url(/assets/ogiwisu.jpg);
+    background-image: url(/assets/ogiwisuda.jpg);
     background-size: cover;
     background-position: center;
 }
-.message-form {
-    width: 20%;
-    float: left;
+
+#section-message-us {
+    margin-left:50px;
+}
+.judul-message{
+    padding-left: 100px
 }
 
-.message-list {
-    width: 80%;
-    float: right;
-    border: 5000;
-
+.message-container {
+    display: flex;
 }
-.submit-gas {
-    width: 100%;
+
+.message-input {
     padding: 10px;
-    border: 1px solid;
+    padding-left: 100px
+}
+
+#name-input {
+    padding: 5px;
+    width: 300px;
+    border: 2px solid black;
     border-radius: 4px;
-    background-color: grey;
+    margin: 7px;
+    margin-left: 65px;
+}
+
+.tanggal-input {
+    
+}
+
+#date-input {
+    padding: 5px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 7px;
+
+}
+
+#male{
+    margin-left: 15px;
+}
+
+#male:checked {
+    accent-color: black;
+}
+
+#female:checked {
+    accent-color: black;
+}
+
+.pesan-input {
+    vertical-align: top;
+}
+
+.pesan-jarak {
+    margin-top: 12px;
+}
+#message {
+    height: 100px;
+    width: 304px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-left: 70px;
+}
+
+.message-value {
+    border: 2px solid black;
+    padding-left: 20px;
+    width: 300px;
+    height: 226px;
+    margin-left: 200px;
+    padding-top:40px;
+}
+
+
+.submit-button {
     cursor: pointer;
+    width: 423px;
+    height: 30px;
+    color: black;
+    background-color: #cac4c4;
+  
 }
 
 footer>div {
