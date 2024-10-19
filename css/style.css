@@ -23,6 +23,13 @@ nav>a {
     text-decoration: none;
     color: black;
 }
+.judul-home>h1 {
+    margin-left: 100px;
+}
+
+.materi-home>p{
+    margin-left: 100px;
+}
 
 .photo-banner{
     height: 500px;
@@ -31,11 +38,46 @@ nav>a {
     background-position: center;
 }
 
-#section-message-us {
-    margin-left:50px;
+.profil-ogi>h1 {
+    margin-left: 100px;
 }
-.judul-message{
-    padding-left: 100px
+.judul-portfolio>h1 {
+    margin-left:100px;
+}
+.judul-portfolio>h4 {
+    text-align: center;
+}
+.judul-portfolio>p {
+    text-align: center;
+}
+
+.figure-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    justify-items: center;
+    align-items: baseline;
+}
+
+.figure-project>figcaption {
+    background-color: grey;
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
+.figure-project>img {
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    margin: 15px;
+    margin-left: 50px;
+}
+#section-message-us {
+    margin-left:100px;
+    margin-top:100px;
 }
 
 .message-container {
@@ -55,8 +97,6 @@ nav>a {
     margin: 7px;
     margin-left: 65px;
 }
-
-
 
 #date-input {
     padding: 5px;
