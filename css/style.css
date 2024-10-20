@@ -23,19 +23,48 @@ nav>a {
     text-decoration: none;
     color: black;
 }
+
+#section-home {
+    margin-left: 60px;
+    margin-right: 60px
+}
 .judul-home>h1 {
     margin-left: 100px;
 }
 
-.materi-home>p{
-    margin-left: 100px;
+.materi-home>h1{
+    position:absolute;
+    top:50%;
+    right: 50%;
+    transform:translate(50%, -50%);
+    color:white;
+    font-size: 70px;
+    margin-top: -5px;
 }
 
 .photo-banner{
+
     height: 500px;
-    background-image: url(/assets/ogiwisuda.jpg);
+    width: 100%;
+    color: white;
+    background: linear-gradient(rgb(42,0,42,0.8), rgb(142,42,72,0.8));
+    background-image: url(/assets/background.jpg);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 70px;
+}
+
+#section-profil {
+    margin-left: 60px;
+    margin-right: 60px
+}
+
+.jelas-profil {
+    display: flex;
+}
+
+.photo-profil {
+    position: relative;
 }
 
 .profil-ogi>h1 {
@@ -84,20 +113,27 @@ nav>a {
     display: flex;
 }
 
-.message-input {
+#message-input {
     padding: 10px;
     padding-left: 100px
 }
 
-#name-input {
+#name {
     padding: 5px;
     width: 300px;
     border: 2px solid black;
     border-radius: 4px;
     margin: 7px;
-    margin-left: 65px;
+    margin-left:61px;
 }
 
+#birthdate {
+    padding: 5px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 7px;
+}
 #date-input {
     padding: 5px;
     width: 300px;
@@ -108,7 +144,7 @@ nav>a {
 }
 
 #male{
-    margin-left: 15px;
+    margin-left: 47px;
 }
 
 #male:checked {
@@ -119,10 +155,6 @@ nav>a {
     accent-color: black;
 }
 
-.pesan-input {
-    vertical-align: top;
-}
-
 .pesan-jarak {
     margin-top: 12px;
 }
@@ -131,26 +163,28 @@ nav>a {
     width: 304px;
     border: 2px solid black;
     border-radius: 4px;
-    margin-left: 70px;
+    margin-left: 105px;
 }
 
-.message-value {
+#message-form>button {
+    cursor: pointer;
+    width: 415px;
+    height: 30px;
+    color: black;
+    background-color: #cac4c4;
+}
+
+.right-message {
     border: 2px solid black;
     padding-left: 20px;
     width: 300px;
     height: 226px;
     margin-left: 200px;
-    padding-top:40px;
+    padding-top:10px;
 }
 
-
-.submit-button {
-    cursor: pointer;
-    width: 423px;
-    height: 30px;
-    color: black;
-    background-color: #cac4c4;
-  
+.message-point {
+    position: absolute;
 }
 
 footer>div {

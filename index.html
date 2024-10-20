@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ogi Yatri</title>
+    <title>Malakiano Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -33,10 +33,10 @@
             </header>
 
             <article class="materi-home">
-                <p>lorem ipsum</p>
-
                 <!-- Photo Banner -->
-                 <div class="photo-banner"></div>
+                <div class="photo-banner"></div>
+                <h1>welcome user, enjoyyyyy</h1>
+                <p>lorem ipsum</p>
             </article>
         </section>
 
@@ -48,11 +48,14 @@
                 <h1>Profil</h1>
             </header>
 
-            <article>
+            <article class="jelas-profil">
                 <div class="photo-profil">
-                    <div class="profil-icon">
-
-                    </div>
+                    <img src="/assets/fotologo.jpeg" alt="Ogi Yatri Malakiano">
+                </div>
+                <div class="desc-profil">
+                    <h5>Ogi Yatri Malakiano</h5>
+                    <p>Fullstack Web Developer</p>
+                    <p>lorem ipsum dolor sit amet</p>
                 </div>
             </article>   
                 
@@ -86,41 +89,39 @@
             <header class="judul-message">
                 <h1>Message Us</h1>
             </header>
-            <div class="message-container">
-                <form class="message-input">
-                    <div class="nama-input">
-                        <label for="name">Nama</label>
-                        <input type="text" name="name" id="name-input" placeholder="Nama">
-                    </div>
-                    <div class="tanggal-input">
-                        <label for="date">Tanggal Lahir : </label>
-                        <input type="date" name="date" id="date-input" value="2024-10-24">
-                    </div>
-                    <div class="genre-input">
-                        <label>Jenis kelamin</label>
-                        <input type="radio" name="gender" id="male" value="Laki-laki">
-                        <label for="male">Laki-Laki</label>
-                        <input type="radio" name="gender" id="female" value="Perempuan">
-                        <label for="female">Perempuan</label>
-                    </div>
-                    <div class="pesan-jarak">
-                        <label class="pesan-input" for="message">Pesan</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Tulis Pesan Anda Disini"></textarea>
-                    </div>
-                    <div>
-                        <input class="submit-button" type="submit" value="Submit">
-                    </div>
-                </form>
+            <div class="message-container"> 
+                <form action="" id="message-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
 
-                <div class="message-value">
-                    <p>Current time :</p>
-                    <p>Nama :</p>
-                    <p>Tanggal Lahir :</p>
-                    <p>Jenis Kelamin :</p>
-                    <p>Pesan :</p>
+                    <label for="birthdate">Tanggal Lahir:</label>
+                    <input type="date" id="birthdate" name="birthdate" required><br>
+
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label><br>
+
+                    <label class="message-point" for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+                <div>
+                    <div class="right-message">
+                        <h2>Your Details</h2>
+                        <p><strong>Name:</strong> <span id="displayName"></span></p>
+                        <p><strong>Place of Birth (Date):</strong> <span id="displayBirthdate"></span></p>
+                        <p><strong>Gender:</strong> <span id="displayGender"></span></p>
+                        <p><strong>Message:</strong> <span id="displayMessage"></span></p>
+                        <p><strong>Current Time:</strong> <span id="currentTime"></span></p>
+                    </div>
                 </div>
             </div>
+        </div>
         </section>
+        <script src="js/script.js"></script>
     </main>
 
     <hr />
