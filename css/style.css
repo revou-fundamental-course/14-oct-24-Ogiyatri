@@ -1,7 +1,10 @@
+
 .main-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* background-color:rgb(48, 43, 43); */
 }
 
 .logo-icon{
@@ -11,6 +14,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 nav {
@@ -29,46 +33,60 @@ nav>a {
     margin-right: 60px
 }
 .judul-home>h1 {
-    margin-left: 100px;
-}
-
-.materi-home>h1{
-    position:absolute;
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+    position: absolute;
+    text-align: center;
+    top:50%;
+    width: 100%;
+    left: 0;
+    transform: translate(0, -50%);
+    color:white;
+    font-size: 70px;
+    /* position: absolute;
     top:50%;
     right: 50%;
     transform:translate(50%, -50%);
-    color:white;
+    color:black;
     font-size: 70px;
-    margin-top: -5px;
+    margin-top: -5px; */
 }
 
-.photo-banner{
-
-    height: 500px;
+.video-banner{
+    height: 100vh;
     width: 100%;
-    color: white;
-    background: linear-gradient(rgb(42,0,42,0.8), rgb(142,42,72,0.8));
-    background-image: url(/assets/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 70px;
-}
 
-#section-profil {
-    margin-left: 60px;
-    margin-right: 60px
+    object-fit: cover;
+    /* background: linear-gradient(rgb(42,0,42,0.8), rgb(142,42,72,0.8)); */
+    /* background-image: url(/assets/background.jpg); */
+    /* background-size: cover;
+    background-repeat: no-repeat;  */
 }
 
 .jelas-profil {
     display: flex;
+    justify-content: center;
 }
 
 .photo-profil {
     position: relative;
 }
+.photo-profil>img {
+    width: 300px;
+}
+
+.desc-profil>img {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
 
 .profil-ogi>h1 {
     margin-left: 100px;
+}
+
+#section-portfolio {
+    background-color: grey;
 }
 .judul-portfolio>h1 {
     margin-left:100px;
@@ -82,41 +100,31 @@ nav>a {
 
 .figure-project {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: stretch;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
     justify-items: center;
-    align-items: baseline;
+    flex-direction: row;
 }
 
-.figure-project>figcaption {
-    background-color: grey;
-    color: black;
-    font-style: italic;
-    padding: 2px;
+.figure-project>figure {
     text-align: center;
 }
 
-.figure-project>img {
-    height: 300px;
-    width: 300px;
-    border-radius: 15px;
-    margin: 15px;
-    margin-left: 50px;
-}
-#section-message-us {
-    margin-left:100px;
-    margin-top:100px;
+.figure-project img {
+    border-radius: 10px; /* Example: Adding rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Example: Adding a shadow */
+    width: 100%; /* Makes images responsive by taking the full width of the container */
+    transition: transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
+.figure-project img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
 .message-container {
     display: flex;
+    justify-content: center;
 }
 
-#message-input {
-    padding: 10px;
-    padding-left: 100px
-}
 
 #name {
     padding: 5px;
@@ -157,6 +165,10 @@ nav>a {
 
 .pesan-jarak {
     margin-top: 12px;
+}
+
+.judul-message {
+    margin-left: 100px;
 }
 #message {
     height: 100px;

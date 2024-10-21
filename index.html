@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malakiano Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,14 +30,14 @@
         <!-- section home -->
         <section id="section-home">
             <header class="judul-home">
-                <h1>Hi User, Welcome to My Website</h1>
+                <h1 data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="1000">Hi <div id="user">User</div></h1>
             </header>
 
             <article class="materi-home">
                 <!-- Photo Banner -->
-                <div class="photo-banner"></div>
-                <h1>welcome user, enjoyyyyy</h1>
-                <p>lorem ipsum</p>
+                <video class="video-banner" autoplay muted loop>
+                    <source src="/assets/Black White Abstract Color and Style Video Background.mp4" type="video/mp4">
+                </video>
             </article>
         </section>
 
@@ -56,6 +57,9 @@
                     <h5>Ogi Yatri Malakiano</h5>
                     <p>Fullstack Web Developer</p>
                     <p>lorem ipsum dolor sit amet</p>
+                    <img src="/assets/skill/html.png" alt="HTML">
+                    <img src="/assets/skill/css.png" alt="CSS">
+                    <img src="/assets/skill/javascript.png" alt="JavaScript">
                 </div>
             </article>   
                 
@@ -68,19 +72,26 @@
             <header class="judul-portfolio">
                 <h1>Portfolio</h1>
                 <h4>Past Project Experience</h4>
-                <p>lorem ipsum dolor sit amet</p>
+                <p>The projects I have worked on</p>
             </header>
-            <figure class="figure-project">
-                <img src="/assets/project/Personal_Website.png" alt="Personal_Website">
-                <!-- <figcaption>Personal Website</figcaption> -->
-                <img src="/assets/project/Website_Fakultas.png" alt="Website_Fakultas">
-                <!-- <figcaption>Website Fakultas Teknologi Informasi Universitas Andalas</figcaption> -->
-                <img src="/assets/project/UMKM_Kota_Padang.png" alt="UMKM_Kota_Padang">
-                <!-- <figcaption>Website UMKM Kota Padang</figcaption> -->
-                <img src="/assets/project/Sitegub.png" alt="Sitegub">
-                <!-- <figcaption>Website Sistem Management Gedung Perkuliahan Universitas Andalas</figcaption> -->
-              </figure>
-            
+            <article class="figure-project">
+                <figure>
+                    <img data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" width="300px" src="/assets/project/Personal_Website.png" alt="Personal_Website">
+                    <figcaption>Personal Website</figcaption>
+                </figure>
+                <figure>
+                    <img data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000" src="/assets/project/Website_Fakultas.png" alt="Website_Fakultas">
+                    <figcaption>Website Fakultas Teknologi Informasi Universitas Andalas</figcaption>
+                </figure>
+                <figure>
+                    <img data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" src="/assets/project/UMKM_Kota_Padang.png" alt="UMKM_Kota_Padang">
+                    <figcaption>Website UMKM Kota Padang</figcaption>
+                </figure>
+                <figure>
+                    <img data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" src="/assets/project/Sitegub.png" alt="Sitegub">
+                    <figcaption>Website Sistem Management Gedung Perkuliahan Universitas Andalas</figcaption>
+                </figure>
+            </article>
         </section>
         <hr />
 
@@ -112,7 +123,7 @@
                     <div class="right-message">
                         <h2>Your Details</h2>
                         <p><strong>Name:</strong> <span id="displayName"></span></p>
-                        <p><strong>Place of Birth (Date):</strong> <span id="displayBirthdate"></span></p>
+                        <p><strong>Tanggal Lahir:</strong> <span id="displayBirthdate"></span></p>
                         <p><strong>Gender:</strong> <span id="displayGender"></span></p>
                         <p><strong>Message:</strong> <span id="displayMessage"></span></p>
                         <p><strong>Current Time:</strong> <span id="currentTime"></span></p>
@@ -122,6 +133,10 @@
         </div>
         </section>
         <script src="js/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </main>
 
     <hr />

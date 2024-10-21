@@ -1,4 +1,11 @@
 //ini java script pakai prompt
+function replaceName() {
+    let name = prompt("What is your name?");
+    document.getElementById("user").textContent = name;
+}
+
+replaceName();
+
 // Get form and display elements
 const form = document.getElementById('message-form');
 const displayName = document.getElementById('displayName');
