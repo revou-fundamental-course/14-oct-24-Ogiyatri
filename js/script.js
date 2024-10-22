@@ -6,6 +6,29 @@ function replaceName() {
 
 replaceName();
 
+//slide gambar
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+function showDivs(n) {
+    var i;
+    var imgList = document.getElementsByClassName("video-banner");
+    if (n > imgList.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = imgList.length }
+    for (i = 0; i < imgList.length; i++) {
+        imgList[i].style.display = "none";
+    }
+    imgList[slideIndex - 1].style.display = "block";
+}
+//otomatis nav
+setInterval(() => {
+    plusDivs(1);
+}, 2000);
+
+
 // Get form and display elements
 const form = document.getElementById('message-form');
 const displayName = document.getElementById('displayName');
