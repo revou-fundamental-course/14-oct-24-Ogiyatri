@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 400px){
     .main-header {
         flex-direction: column;
     }
@@ -7,12 +7,35 @@
         flex-direction: column;
         text-align: center;
     }
+    .jelas-profil {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+    .right-message {
+        margin-left:0px;
+    }  
+    #birthdate {
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 7px;
+    }
+    #name {
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 4px;
+        margin: 7px;
+    }
     .message-container {
         flex-direction: column;
     }
-    .figure-project {
-        display: flex;
-        flex-direction: column;
+    .video-banner {
+        height: 10px;
+        width: 10px;
     }
 }
 
@@ -61,13 +84,6 @@ nav>a {
     transform: translate(0, -50%);
     color:white;
     font-size: 70px;
-    /* position: absolute;
-    top:50%;
-    right: 50%;
-    transform:translate(50%, -50%);
-    color:black;
-    font-size: 70px;
-    margin-top: -5px; */
 }
 
 .video-banner{
@@ -113,11 +129,12 @@ nav>a {
 
 .figure-project {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .figure-project>figure {
@@ -134,15 +151,14 @@ nav>a {
 .figure-project img:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
+
 .message-container {
-    display: flex;
+    display:flex;
     justify-content: center;
 }
 
-
 #name {
     padding: 5px;
-    width: 300px;
     border: 2px solid black;
     border-radius: 4px;
     margin: 7px;
@@ -151,22 +167,20 @@ nav>a {
 
 #birthdate {
     padding: 5px;
-    width: 300px;
     border: 2px solid black;
     border-radius: 4px;
     margin: 7px;
+    width: 22vh;
 }
 #date-input {
     padding: 5px;
-    width: 300px;
     border: 2px solid black;
     border-radius: 4px;
     margin: 7px;
-
 }
 
 #male{
-    margin-left: 47px;
+    margin-left: 90px;
 }
 
 #male:checked {
@@ -186,7 +200,6 @@ nav>a {
 }
 #message {
     height: 100px;
-    width: 304px;
     border: 2px solid black;
     border-radius: 4px;
     margin-left: 105px;
@@ -194,7 +207,7 @@ nav>a {
 
 #message-form>button {
     cursor: pointer;
-    width: 415px;
+    width: 300px;
     height: 30px;
     color: black;
     background-color: #cac4c4;
@@ -203,9 +216,7 @@ nav>a {
 .right-message {
     border: 2px solid black;
     padding-left: 20px;
-    width: 300px;
     height: 226px;
-    margin-left: 200px;
     padding-top:10px;
 }
 
