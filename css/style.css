@@ -50,7 +50,7 @@
 .logo-icon{
     height: 50px;
     width: 50px;
-    background-image: url(/assets/fotologo.png);
+    background-image: url(./assets/fotologo.png);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
