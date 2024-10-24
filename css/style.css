@@ -1,3 +1,4 @@
+/* media query */
 @media only screen and (max-width: 400px){
     .main-header {
         flex-direction: column;
@@ -6,6 +7,11 @@
         width: 100%;
         flex-direction: column;
         text-align: center;
+    }
+    .video-banner {
+        height:60vh;
+        width: 100%;
+        object-fit: cover;
     }
     .jelas-profil {
         display: flex;
@@ -45,7 +51,7 @@
         justify-content: space-evenly;
     }
 }
-
+ /* Logo item dan navigasi  */
 .main-header {
     display: flex;
     align-items: center;
@@ -53,22 +59,21 @@
     padding: 10px 20px;
     /* background-color:rgb(48, 43, 43); */
 }
-
+/* logo */
 .logo-icon>img{
     height: 10vh;
 }
-
 nav {
     display: flex;
 }
-
+/* navigasi */
 nav>a {
     border: 1px solid;
     padding: 8px;
     text-decoration: none;
     color: black;
 }
-
+/* section home */
 #section-home {
     margin-left: 60px;
     margin-right: 60px
@@ -92,6 +97,7 @@ nav>a {
     object-fit: cover;
 }
 
+/* section profil */
 .jelas-profil {
     display: flex;
     justify-content: center;
@@ -114,6 +120,7 @@ nav>a {
     margin-left: 100px;
 }
 
+/* section portfolio */
 #section-portfolio {
     background-color: grey;
 }
@@ -142,16 +149,17 @@ nav>a {
 }
 
 .figure-project img {
-    border-radius: 10px; /* Example: Adding rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Example: Adding a shadow */
-    width: 100%; /* Makes images responsive by taking the full width of the container */
-    transition: transform 0.3s ease; /* Smooth transition for hover effects */
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 100%; 
+    transition: transform 0.3s ease; 
 }
 
 .figure-project img:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
+/* section message us */
 .message-container {
     display:flex;
     justify-content: center;
@@ -224,6 +232,7 @@ nav>a {
     position: absolute;
 }
 
+/* footer */
 footer>div {
     text-align: center;
     font-family: cursive;
